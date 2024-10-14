@@ -1,12 +1,12 @@
 {
-  "name": "onlikeos",
+  "name": "onlike-os",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "serve:ssr:onlikeos": "node dist/onlikeos/server/server.mjs"
+    "serve:ssr:onlike-os": "node dist/onlike-os/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +22,10 @@
     "@angular/platform-server": "^17.0.0",
     "@angular/router": "^17.0.0",
     "@angular/ssr": "^17.0.10",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "material-icons": "^1.13.12",
+    "material-symbols": "^0.23.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"

@@ -3,19 +3,21 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "onlikeos": {
+    "onlike-os": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "inlineTemplate": false,
           "inlineStyle": false,
-          "skipTests": true
+          "skipTests": true,
+          "standalone": false
         },
         "@schematics/angular:class": {
           "skipTests": true
         },
         "@schematics/angular:directive": {
-          "skipTests": true
+          "skipTests": true,
+          "standalone": false
         },
         "@schematics/angular:guard": {
           "skipTests": true
@@ -24,7 +26,8 @@
           "skipTests": true
         },
         "@schematics/angular:pipe": {
-          "skipTests": true
+          "skipTests": true,
+          "standalone": false
         },
         "@schematics/angular:resolver": {
           "skipTests": true
@@ -40,7 +43,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/onlikeos",
+            "outputPath": "dist/onlike-os",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -90,10 +93,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "onlikeos:build:production"
+              "buildTarget": "onlike-os:build:production"
             },
             "development": {
-              "buildTarget": "onlikeos:build:development"
+              "buildTarget": "onlike-os:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -101,13 +104,13 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "onlikeos:build"
+            "buildTarget": "onlike-os:build"
           }
         }
       }
     }
   },
   "cli": {
-    "analytics": "c0fe7346-2f44-44f9-b66e-5eb393d51f54"
+    "analytics": "b063e799-0531-472f-8362-061d14f32f47"
   }
 }
